@@ -28,14 +28,16 @@
 	}
 	iframe
 	{
-		align-content:center;
+		padding-left: 265px;
+		width: 885px;
 	}
 </style>
 
 <div class="w3-sidebar w3-bar-block w3-light-grey w3-card" style="width:130px">
   <h5 class="w3-bar-item">Menu</h5>
   <button class="w3-bar-item w3-button tablink" onclick="openCity(event, 'Welcome')">Welcome</button>
-  <button class="w3-bar-item w3-button tablink" onclick="openCity(event, 'Highlights')">Tournament Highlights</button>
+  <button class="w3-bar-item w3-button tablink" onclick="openCity(event, 'Highlights')">Tournament VODS</button>
+  <button class="w3-bar-item w3-button tablink" onclick="openCity(event, 'Clips')">Clips</button>
   <button class="w3-bar-item w3-button tablink" onclick="openCity(event, 'About')">About Me</button>
 </div>
 
@@ -49,12 +51,12 @@
   </div>
 
   <div id="Highlights" class="city" style="display:none">
-    <h2>Tournament Highlights!</h2>
-    <p>Here are some of my highlights from a few tournaments I have played in!</p> 
+    <h2>Tournament VODS</h2>
+    <p>Here are the full VODS from a few Tournaments I have played in!</p> 
     <p>Overwatch Community Clash July 2020: </p>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/j56l97YibHg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     <p>Osu!World Cup 2019 Canada Vs Germany (Losers Finals - Loss)</p>
-    <iframe src="https://player.twitch.tv/?video=521531079&parent=erichighlights.netlify.app" frameborder="0" allowfullscreen="true" scrolling="no" height="378" width="620"></iframe>
+    <iframe src="https://player.twitch.tv/?video=521531079&parent=erichighlights.netlify.app" frameborder="0" allowfullscreen="true" scrolling="no" height="378" width="620" autoplay="false"></iframe>
     <p>Osu! World Cup 2019 Canada Vs Hong Kong (Losers Semi-Finals Win!)</p>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/7poe4oXeVOc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     <p>Osu! World Cup 2019 Canada Vs Poland (Losers Semi-Finals Win!)</p>
@@ -65,8 +67,16 @@
     <iframe width="560" height="315" src="https://www.youtube.com/embed/qKgaMbe0w-E" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     <p>Osu! World Cup 2019 Canada Vs Czech Republic (Round of 32 - Win!)</p>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/xO18Anna6Fs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <p>My First SS! Played in Canadian Draft Cup 2019: </p>
-    <iframe src="https://clips.twitch.tv/embed?clip=ClumsyPeppyRatChocolateRain&parent=erichighlights.netlify.app" frameborder="0" allowfullscreen="true" scrolling="no" height="378" width="620"></iframe>
+    
+  </div>
+
+  <div id ="Clips" class = "city" style = "display:none">
+  	<h2>Clips!</h2>
+  	<p>Here are some funny, interesting and tragic moments accumulated throughout multiple games!</p>
+  	<p>Mcree Highlight - Played in Community Clash 2020</p>
+  	<iframe src="https://clips.twitch.tv/embed?clip=CrispyHappyLardWOOP&parent=erichighlights.netlify.app" frameborder="0" allowfullscreen="true" scrolling="no" height="378" width="620" autoplay="false"></iframe>
+  	<p>My First SS! Played in Canadian Draft Cup 2019: </p>
+    <iframe src="https://clips.twitch.tv/embed?clip=ClumsyPeppyRatChocolateRain&parent=erichighlights.netlify.app" frameborder="0" allowfullscreen="true" scrolling="no" height="378" width="620" autoplay="false"></iframe>
   </div>
 
   <div id="About" class="city" style="display:none">
