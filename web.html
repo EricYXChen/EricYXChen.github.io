@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<script src = Tabs.js ></script>
+<body>
+
+<style>
+	.welcomePage
+	{
+		font-family:verdana;
+		font-size: 50px;
+		padding-top: 20%;
+		padding-left: 130px;
+	}
+	h2
+	{
+		font-family: verdana;
+		font-size: 50px;
+		text-align: center;
+	}
+	p
+	{
+		font-family:verdana;
+		font-size: 20px;
+		text-align: center;
+	}
+	iframe
+	{
+		align-content:center;
+	}
+</style>
+
+<div class="w3-sidebar w3-bar-block w3-light-grey w3-card" style="width:130px">
+  <h5 class="w3-bar-item">Menu</h5>
+  <button class="w3-bar-item w3-button tablink" onclick="openCity(event, 'Welcome')">Welcome</button>
+  <button class="w3-bar-item w3-button tablink" onclick="openCity(event, 'Highlights')">Tournament Highlights</button>
+  <button class="w3-bar-item w3-button tablink" onclick="openCity(event, 'About')">About Me</button>
+</div>
+
+<div style="margin-left:145px">
+
+  <div id="Welcome" class= "city" >
+  		<div class = "welcomePage">
+    		Hi! I'm Eric!
+    		Welcome to my Website!
+    	</div>
+  </div>
+
+  <div id="Highlights" class="city" style="display:none">
+    <h2>Tournament Highlights!</h2>
+    <p>Here are some of my highlights from a few tournaments I have played in!</p> 
+    <p>Overwatch Community Clash July 2020: </p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/j56l97YibHg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <p>My First SS! Played in Canadian Draft Cup 2019: </p>
+    <iframe src="https://clips.twitch.tv/embed?clip=ClumsyPeppyRatChocolateRain&parent=www.example.com" frameborder="0" allowfullscreen="true" scrolling="no" height="378" width="620"></iframe>
+  </div>
+
+  <div id="About" class="city" style="display:none">
+    <h2>About me</h2>
+    <p>Hello! I'm currently a student attending the University of Waterloo for Computer Engineering and part of Canada's osu!world cup team. I love games, music and technology and have recently started playing bass.</p>
+    <p>This website was made to accumualte some of the best moments captured by me or my friends when playing together. I hope some of it is entertaining!</p>
+  </div>
+
+</div>
+
+
+</body>
+</html>
