@@ -4,15 +4,77 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <script src = Tabs.js ></script>
+
 <body>
 
+<script>
+window.onload = function() {
+	Particles.init({
+	selector: '.background',
+  	 color: ['#DA0463', '#404B69', '#DBEDF3'],
+  	// color: ['#000000', '#666666'],
+  	connectParticles: true,
+  	speed: 0.3,
+	});
+};
+
+</script>
 <style>
+	.background {
+  		position: absolute;
+  		top: 0;
+  		bottom: 0;
+  		left: 0;
+  		right: 0;
+  		z-index: -1;
+  		height: 3000px;
+	}
+	.parallax1 {
+		height: 1000px;
+		background-image: url("pic1.png");
+		background-attachment: fixed;
+		background-position: left;
+		background-repeat: no-repeat;
+		background-size: cover;
+		position: absolute;
+  		left: 0;
+  		right: 0;
+  		top: 0;
+  		bottom: 0;
+	}
+	.parallax2 {
+		height: 1000px;
+		background-image: url("pic2.png");
+		background-attachment: fixed;
+		background-position: left;
+		background-repeat: no-repeat;
+		background-size: cover;
+		position: absolute;
+  		left: 0;
+  		right: 0;
+  		top: 0;
+  		bottom: 0;
+	}
+	.parallax3 {
+		height: 1000px;
+		background-image: url("pic3.png");
+		background-attachment: fixed;
+		background-position: left;
+		background-repeat: no-repeat;
+		background-size: cover;
+		position: absolute;
+  		left: 0;
+  		right: 0;
+  		top: 0;
+  		bottom: 0;
+	}
 	.welcomePage
 	{
 		font-family:verdana;
 		font-size: 50px;
 		padding-top: 20%;
-		padding-left: 130px;
+		padding-left: 150px;
+
 	}
 	.aboutMe
 	{
@@ -21,6 +83,10 @@
 		padding-top: 100px;
 		padding left: 140px;
 		align-content: left;
+	}
+	.space
+	{
+		padding-top: 1000px;
 	}
 	h2
 	{
@@ -61,11 +127,12 @@
     		Hi! I'm Eric!
     		Welcome to my Website!
     	</div>
+
   </div>
 
   <div id="Highlights" class="city" style="display:none">
-    <h2>Tournament VODS</h2>
-    <p>Here are the full VODS from a few Tournaments I have played in!</p> 
+ 	<div class = "parallax1"><div class = "welcomePage">Tournament VODS</div></div>
+    <div class = "space"><p>Here are the full VODS from a few Tournaments I have played in!</p></div>
     <p>Overwatch Community Clash July 2020: </p>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/j56l97YibHg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     <p>Osu!World Cup 2019 Canada Vs Germany (Losers Finals - Loss)</p>
@@ -84,8 +151,8 @@
   </div>
 
   <div id ="Clips" class = "city" style = "display:none">
-  	<h2>Clips!</h2>
-  	<p>Here are some funny, interesting and tragic moments accumulated throughout multiple games!</p>
+  	<div class = "parallax2"><div class = "welcomePage">Clips</div></div>
+  	<div class = "space"><p>Here are some funny, interesting and tragic moments accumulated throughout multiple games!</p></div>
   	<p>Mcree Highlight - Played in Community Clash 2020</p>
   	<iframe src="https://clips.twitch.tv/embed?clip=CrispyHappyLardWOOP&parent=erichighlights.netlify.app" frameborder="0" allowfullscreen="true" scrolling="no" height="378" width="620" autoplay="false"></iframe>
   	<p>My First SS! Played in Canadian Draft Cup 2019: </p>
@@ -93,8 +160,8 @@
   </div>
 
   <div id="About" class="city" style="display:none">
-    <h2>About me</h2>
-    <p>Hello! I'm currently a student attending the University of Waterloo for Computer Engineering and part of Canada's osu!world cup team. I love games, music and technology :)
+      <div class = "parallax3"><div class = "welcomePage">About me</div></div>
+    <div class = "space"><p>Hello! I'm currently a student attending the University of Waterloo for Computer Engineering and part of Canada's osu!world cup team. I love games, music and technology :) </p></div>
     <p>This website was made to accumualte some of the best moments captured by me or my friends when playing together. I hope some of it is entertaining!</p>
     <div class = "aboutMe">
     	<p>Connect with me on <a href = "https://www.linkedin.com/in/ericyxchen/">LinkedIn!</a></p>
@@ -105,6 +172,7 @@
 
 </div>
 
-
+<script src="particles.min.js"></script>
+<canvas class="background"></canvas> 	
 </body>
 </html>
